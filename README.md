@@ -34,6 +34,7 @@ Here is our evaluation process:
 * Search and change the variables in the following files:
   * *[Input_List/sub_valid.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
   * *[sub_valid.prototxt]*: **<PATH_TO_MODEL_SELECTION>**
+  * *[I_sub_valid_extract_probs.py]*: **<PATH_TO_MODEL_FILES[TRAINING/MODELS]>** and **<PATH_TO_MODEL_SELECTION>**
 * Run *[I_sub_valid_extract_probs]* python script. This script will extract probabilites from the validation subset for each model. This step will take some time (20 minutes per model x 40 models).
 * Run *[II_sub_valid_parse_probs]* matlab script. This script will parse the extracted probabilities to a Label structure, which will be used in following steps.
 * Run *[III_sub_valid_evaluate.m]* matlab script. This script will create prediction files which will be used to measure jaccard index score. 
