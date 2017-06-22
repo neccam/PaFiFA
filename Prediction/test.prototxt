@@ -5,9 +5,9 @@ layers {
   top: "data"
   top: "label"
   image_data_param {
-    source: "<PATH_TO_MODEL_SELECTION>/Input_List/sub_valid.input"
+    source: "<PATH_TO_PREDICTION_FOLDER>/Input_List/test.input"
     use_image: true
-    mean_file: "<PATH_TO_MODEL_SELECTION>/Mean/congd_mean.binaryproto"
+    mean_file: "<PATH_TO_PREDICTION_FOLDER>/Mean/congd_mean.binaryproto"
     use_temporal_jitter: false
     batch_size: 80
     crop_size: 112
