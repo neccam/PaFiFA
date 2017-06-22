@@ -53,7 +53,7 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
   * *[I_extract_valid/test_probs.py]*: **<PATH_TO_PREDICTION_FOLDER>**
 * Run *[I_valid/test_extract_probs.py]* python scripts. These scripts will extract probabilites from the validation/test  sets for the best performing model. This step will take some time (Over 4+ hours for each set).
 * Run *[II_valid/test_parse_probs.m]* matlab scripts. These scripts will parse the extracted probabilities to Label structures, which will be used in following steps.
-* Run *[III_sub_valid_evaluate.m]* matlab scripts. These scripts will output final prediction files *[valid/test_prediction]* which you can use to measure our jaccard index score.
+* Run *[III_valid/test_evaluate.m]* matlab scripts. These scripts will output final prediction files *[valid/test_prediction.txt]* which you can use to measure our jaccard index score.
 
 #### The code was tested on Ubuntu 14.04 machine with CUDA 8.0 and cuDNN 5.0. All of the experiments were done on a single Titan X GPU with 12 GB VRAM. ####
 
