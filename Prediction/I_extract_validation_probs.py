@@ -23,8 +23,6 @@ nBatches = np.ceil(nSamples / nBatchSize).astype(int);
 
 GPU_ID = 2;
 
-## SET THE ITERATION VALUE TO THE BEST PERFORMING SETUPS FROM THE SUB_VALIDATION SET
-
 net = [];
 net = caffe.Net(prototxt_file, model);
 net.set_phase_test();
