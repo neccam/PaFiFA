@@ -6,7 +6,7 @@ import time
 import scipy.io as sio
 
 path = '<PATH_TO_PREDICTION_FOLDER>'
-prototxt_file = '<PATH_TO_PREDICTION_FOLDER>' + '/test.prototxt';
+prototxt_file = path + '/test.prototxt';
 
 model = path + '/Best_Performing_Model/best_performing_model';
 
