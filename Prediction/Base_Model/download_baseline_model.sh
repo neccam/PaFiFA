@@ -1,1 +1,0 @@
-wget "http://cihancamgoz.com/chalearn-pafifa/baseline_model"
