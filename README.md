@@ -55,7 +55,7 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
 * Run *[II_valid/test_parse_probs.m]* matlab scripts. These scripts will parse the extracted probabilities to Label structures, which will be used in following steps.
 * Run *[III_sub_valid_evaluate.m]* matlab scripts. These scripts will output final prediction files *[valid/test_prediction]* which you can use to measure our jaccard index score.
 
-#### The code was tested on Ubuntu 14.04 machine with CUDA 8.0 and cuDNN 5.0. All of the experiments were done on a single Titan X GPU with 12 GB VRAM.####
+#### The code was tested on Ubuntu 14.04 machine with CUDA 8.0 and cuDNN 5.0. All of the experiments were done on a single Titan X GPU with 12 GB VRAM. ####
 
 **Note:** As this is a public repository the base model, the training input list and the best performing model links will be activated with the end of the competition (07/02/17 00:00 UCT) to allow code verification.
 
