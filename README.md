@@ -34,12 +34,16 @@ Here is our evaluation process:
 * Search and change the variables in the following files:
   * *[Input_List/sub_valid.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
   * *[sub_valid.prototxt]*: 
-* Run *[I_sub_valid_extract_probs]* python script. This script will extract probabilites from the validation subset for each snapshot (40 of them). This might take some time (20 minutes per model x 40 models)
-* Run *[II_sub_valid_parse_probs]* matlab script. This script will parse the extracted probabilities to Label structure, which will be used in following steps.
+* Run *[I_sub_valid_extract_probs]* python script. This script will extract probabilites from the validation subset for each model. This step will take some time (20 minutes per model x 40 models).
+* Run *[II_sub_valid_parse_probs]* matlab script. This script will parse the extracted probabilities to a Label structure, which will be used in following steps.
 * Run *[III_sub_valid_evaluate.m]* matlab script. This script will create prediction files which will be used to measure jaccard index score. 
-* Run *[IV_sub_valid_measure_jaccard_score.py]* python script. This script will provide you the best performing parameters (Iteration and Threshold Value) You will use these parameters to chose your final model. 
+* Run *[IV_sub_valid_measure_jaccard_score.py]* python script. This script will provide you the best performing parameters (Best Model [Iteration] and Threshold Value). You will use these parameters to chose your final model. 
 
 # Prediction on Validation and Test Sets
+* We now know the best performing model (iteration) from the model selection step. Copy that file from *Training/Models* to the *Prediction* folder and rename it to *best_performing_model*. Or you can just run the *[download_best_performing_model.sh]* to download the model that performed best in our experiments. 
+
+**Note:** As we are using stochastic gradient descent and random initialization for some of our layers, your best performing model is most likely to be different then ours. In addition to evaluation with your models, please evaluate with our best performing model as well to reproduce our final results. 
+
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
 
