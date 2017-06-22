@@ -1,3 +1,5 @@
+addpath('Utils');
+
 prob_file = 'valid_parsed_probs.mat';
 load(prob_file)
 
