@@ -22,6 +22,6 @@ for i = 1:numel(Labels)
 end
 frame_level_acc = frame_level_acc  / numel(Labels);
 
-filename = 'test_predictions.txt'
+filename = 'test_prediction.txt'
 write_pred(Labels, filename);
 
