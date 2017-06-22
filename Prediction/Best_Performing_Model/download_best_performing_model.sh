@@ -1,0 +1,1 @@
+wget "http://cihancamgoz.com/chalearn-pafifa/best_performing_model"
