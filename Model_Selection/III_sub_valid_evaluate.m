@@ -1,4 +1,5 @@
 file_prefix = 'Sub_Validation_Probs/sub_valid_parsed_probs_';
+addpath('Utils');
 
 minIteration = 1000;
 maxIteration = 40000;
