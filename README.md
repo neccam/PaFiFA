@@ -42,7 +42,7 @@ Here is our evaluation process:
 # Prediction on Validation and Test Sets
 * We now know the best performing model (iteration) from the model selection step. Copy that file from *Training/Models* to the *Prediction* folder and rename it to *best_performing_model*. Or you can just run the *[download_best_performing_model.sh]* to download the model that performed best in our experiments. 
 
-**Note:** As we are using stochastic gradient descent and random initialization for some of our layers, your best performing model is most likely to be different then ours. In addition to evaluation with your models, please evaluate with our best performing model as well to reproduce our final results. 
+**Note:** As we are using stochastic gradient descent and random initialization for some of our layers, your best performing model is most likely to be different then ours. In addition to evaluating with your models, please evaluate with our best performing model as well to reproduce our final results. 
 
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
