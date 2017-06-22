@@ -58,4 +58,4 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
 #### The code was tested on Ubuntu 14.04 machine with CUDA 8.0 and cuDNN 5.0. All of the experiments were done on a single Titan X GPU ####
 #### For any question or problem with the code please contact me via e-mail [see profile].
 
-** As this is a public repository the base model, the training input list and the best performing model links will be activated with the end of the competition (07/02/17 00:00 UCT) to allow code verification**
+**As this is a public repository the base model, the training input list and the best performing model links will be activated with the end of the competition (07/02/17 00:00 UCT) to allow code verification**
