@@ -46,5 +46,6 @@ Here is our evaluation process:
 
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
-
+  * *[I_extract_test/validation_probs.py]*: **<PATH_TO_PREDICTION_FOLDER>**
+  
 #### For any question or problem with the code please contact me via e-mail [see profile].
