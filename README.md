@@ -41,9 +41,11 @@ Here is our evaluation process:
 * Run *[IV_sub_valid_measure_jaccard_score.py]* python script. This script will provide you the best performing parameters (Best Model [Iteration] and Threshold Value). You will use these parameters to chose your final model. 
 
 # Prediction on Validation and Test Sets
-* We now know the best performing model (iteration) from the model selection step. Copy that file from *Training/Models* to the *Prediction* folder and rename it to *best_performing_model*. Or you can just run the *[download_best_performing_model.sh]* to download the model that performed best in our experiments. 
+* We now know the best performing model (iteration) from the model selection step. Copy that file from *Training/Models* to the *Prediction/Best_Performing_Model* folder and rename it to *best_performing_model*.
 
-**Note:** As we are using stochastic gradient descent and random initialization for some of our layers, your best performing model is most likely to be different then ours. In addition to evaluating with your models, please evaluate with our best performing model as well to reproduce our final results. 
+Or you can just run the *[Prediction/Best_Performing_Model/download_best_performing_model.sh]* script to download the model that performed best in our experiments. 
+
+**Note:** As we are using stochastic gradient descent with randomly shuffled data and random weight initialization for some of our layers, thus your best performing model is most likely to be different then ours. In addition to evaluating with your models, please evaluate with our best performing model as well to reproduce our final results. 
 
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
