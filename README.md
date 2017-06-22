@@ -27,7 +27,7 @@ To train our model you need to do the following:
 * You require 12 GB VRAM [We used a single Titan X GPU for training].
 
 # Model Selection
-Our training yields us 40 models, snapshots of our network at every 1000 iterations. To select the best performing model we evaluate them on the validation set. However, extraction of posteriors from all of the validation videos takes too much time (4+ hours). Instead we select our model by evaluation them on a subset of the validation set.
+Our training yields us 40 models, snapshots of our network at every 1000 iterations. To select the best performing model we would evaluate them on the validation set. However, extraction of posteriors from all of the validation videos takes too much time (4+ hours for each model). Instead we select our model by evaluation them on a subset of the validation set.
 
 Here is our evaluation process:
 * Go to *Model Selection* folder
