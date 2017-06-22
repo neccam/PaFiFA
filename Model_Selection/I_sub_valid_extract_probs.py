@@ -27,7 +27,7 @@ for iteration in range(1000, 41000, 1000):
     
     if os.path.isfile(model) == True:
         
-        output_file = path + '/' + output_path+' /sub_valid_probs_' + str(iteration);
+        output_file = path + '/' + output_path + '/sub_valid_probs_' + str(iteration);
         if os.path.isfile(output_file + '.mat') == False:
             
             net = [];
