@@ -26,8 +26,22 @@ To train our model you need to do the following:
 * The training will run for 40k iterations. The duration might change depending on your GPU and disk access speed. 
 * You require 12 GB VRAM [We used a single Titan X GPU for training].
 
-# Model Selection (Evaluation on Validation Set)
+# Model Selection
+Our training yields us 40 models, snapshots of our network at every 1000 iterations. To select the best performing model we evaluate our models on validation set. However, extraction of posteriors from all of the validation videos takes too much time (4+ hours). Instead we select our model by evaluation our models on a subset of the validation set.
 
-# Evaluation on Test Set
+Here is our evaluation process:
+* Go to *Model Selection* folder
+* Search and change the variables in the following files:
+  * *[Input_List/valid.input]* : **<PATH_TO_EXTRACTED_FRAMES>**
+  * *[Input_List/sub_valid.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
+  * *[]
+* run *[I_]* as
+* run *[II_]* dasd
+* run *[III_]* asd
+* run *[IV_]* asd
+
+# Prediction on Evaluation and Test Sets
+* Go To *Prediction* folder
+* Search and change the variables in the following files:
 
 #### For any question or problem with the code please contact me via e-mail [see profile].
