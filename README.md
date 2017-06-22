@@ -6,7 +6,7 @@
 * Matlab & Python.
 
 ## Data Preparation
-* First thing you need to do is to extract frames from the videos using the *[congd_convert_to_frames.m]* script.
+First thing you need to do is to extract frames from the videos using the *[congd_convert_to_frames.m]* script.
 * Go to *Extract_Frames_From_Videos* folder.
 * Run the *[congd_convert_to_frames.m]* matlab script.
   * Make sure you change **dbPath** and **savePath** in *[congd_convert_to_frames.m]*.
@@ -22,7 +22,7 @@ To train our model you need to do the following:
   * *[train.sh]*: **<PATH_TO_TRAINING_FOLDER>** and **<PATH_TO_C3D_BUILD>**
   * *[train.prototxt]*: **<PATH_TO_TRAINING_FOLDER>**
 * Go back to *Training* folder and run *[train.sh]*.
-* The output of the training will be written to a file in *Logs* subfolder. You can watch the progress of training with the command *[tail -f <Logs/LOG_FILE_NAME>]*.
+* The output of the training will be written to a file in *Training/Logs* subfolder. You can watch the progress of training with the command *[tail -f <Logs/LOG_FILE_NAME>]*.
 * The training will run for 40k iterations. The duration might change depending on your GPU and disk access speed. 
 * You require 12 GB VRAM [We used a single Titan X GPU for training].
 
