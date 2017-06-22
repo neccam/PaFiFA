@@ -32,15 +32,14 @@ Our training yields us 40 models, snapshots of our network at every 1000 iterati
 Here is our evaluation process:
 * Go to *Model Selection* folder
 * Search and change the variables in the following files:
-  * *[Input_List/valid.input]* : **<PATH_TO_EXTRACTED_FRAMES>**
   * *[Input_List/sub_valid.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
   * *[]
-* run *[I_]* as
+* run *[I_sub_valid]* as
 * run *[II_]* dasd
 * run *[III_]* asd
 * run *[IV_]* asd
 
-# Prediction on Evaluation and Test Sets
+# Prediction on Validation and Test Sets
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
 
