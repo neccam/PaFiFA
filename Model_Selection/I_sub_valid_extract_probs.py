@@ -23,7 +23,7 @@ output_path = 'Sub_Validation_Probs'
 for iteration in range(1000, 41000, 1000):
     
     print model_prefix + str(iteration)
-    model = model_path + '/Models/' + model_prefix + str(iteration)
+    model = model_path + '/' + model_prefix + str(iteration)
     
     if os.path.isfile(model) == True:
         
