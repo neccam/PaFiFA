@@ -4,6 +4,9 @@ SOLVER="<PATH_TO_TRAINING_FOLDER>/solver.prototxt"
 
 EXECUTABLE="<PATH_TO_C3D_BUILD>/build/tools/finetune_net.bin"
 
+mkdir "<PATH_TO_TRAINING_FOLDER>/Models"
+mkdir "<PATH_TO_TRAINING_FOLDER>/Logs"
+
 now=$(date +%Y%m%d_%H%M%S)
 
 GLOG_logtostderr=1 "$EXECUTABLE" "$SOLVER" "$BASE_MODEL" > "Logs/train_log_"$now".txt" 2>&1
