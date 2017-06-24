@@ -43,7 +43,7 @@ if os.path.isfile(output_file) == False:
         frame_probabilities[b*80:(b+1)*80,:] = np.squeeze(net.blobs['prob'].data);
                             
         elapsed = time.time() - beginTime;
-        print("Current Model File: " + model_prefix + str(iteration) + " Processed {} batches in {:.2f} seconds. " "{:.2f} seconds/iteration.".format((b+1), elapsed, elapsed/(b+1)))
+        print("Processed {} batches in {:.2f} seconds. " "{:.2f} seconds/iteration.".format((b+1), elapsed, elapsed/(b+1)))
         time.sleep(.001)
                             
         
