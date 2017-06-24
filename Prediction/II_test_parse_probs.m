@@ -13,4 +13,4 @@ for i = 1:numel(Labels)
     frame_probabilities(prob_idx,:) = [];
 end
 
-save(curr_save, 'Labels');
+save(save_file, 'Labels');
