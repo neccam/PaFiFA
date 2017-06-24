@@ -49,6 +49,8 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
 
 * Go To *Prediction* folder
 * Search and change the variables in the following files:
+  * *[Input_List/valid.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
+  * *[Input_List/test.input]*: **<PATH_TO_EXTRACTED_FRAMES>**
   * *[valid/test.prototxt]*: **<PATH_TO_PREDICTION_FOLDER>**
   * *[I_extract_valid/test_probs.py]*: **<PATH_TO_PREDICTION_FOLDER>**
 * Run *[I_valid/test_extract_probs.py]* python scripts. These scripts will extract probabilites from the validation/test  sets for the best performing model. This step will take some time (Over 4+ hours for each set).
