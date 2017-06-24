@@ -1,12 +1,15 @@
 function [ pred ] = segment_max_prob ( probs, nFrames, th )
         
     %% Segmentation Part
-    nongesture = probs(:,1);
-    smoothed_nongesture = smooth(nongesture);
-    [pks,locs] = findpeaks(smoothed_nongesture);
-    locs(pks < th) = [];
-    pks(pks < th) = [];
-
+    locs = []; pks = [];
+    if size(probs,1) > 16
+        nongesture = probs(:,1);
+        smoothed_nongesture = smooth(nongesture);
+        [pks,locs] = findpeaks(smoothed_nongesture);
+        locs(pks < th) = [];
+        pks(pks < th) = [];
+    end
+    
     valid = ones(numel(locs),1);
     for l = 1:numel(locs)-1
         if valid(l) == 1
@@ -51,7 +54,7 @@ function [ pred ] = segment_max_prob ( probs, nFrames, th )
     else
         gest_probs = probs(:, 2:end);
         [~, predx] = find(gest_probs == max(gest_probs(:)));
-        pred(1:numel(labels)) = predx(1);
+        pred(1:nFrames) = predx(1);
     end
     
 end
