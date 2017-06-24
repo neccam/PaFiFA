@@ -9,7 +9,7 @@ model_path = '<PATH_TO_MODEL_FILES[TRAINING/MODELS]>'
 path = '<PATH_TO_MODEL_SELECTION>';
 
 prototxt_file = path + '/sub_valid.prototxt';
-model_prefix = 'pafifa_iter';
+model_prefix = 'pafifa_iter_';
 
 nClasses = 250;
 nSamples = 32000.0;
