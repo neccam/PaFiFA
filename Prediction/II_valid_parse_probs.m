@@ -4,7 +4,7 @@ save_file = 'valid_parsed_probs.mat';
 Labels = [];
 load Mats/Valid.mat
         
-frame_probabilities = load(curr_probs);
+frame_probabilities = load(prob_file);
 frame_probabilities = frame_probabilities.frame_probabilities;
 
 for i = 1:numel(Labels)
