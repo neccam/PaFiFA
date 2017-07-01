@@ -65,8 +65,7 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
 
 Results with the best performing setup is: 
 
-Valid Results: 0.370675 (3)
-
+Valid Results: 0.370675 (3) <br>
 Test Results: 0.361275 (2)
 
 #### For any question or problem with the code please contact me via e-mail [see profile].
