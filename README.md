@@ -62,8 +62,11 @@ Or you can just run the *[Prediction/Best_Performing_Model/download_best_perform
 **Note:** As this is a public repository the base model, the training input list and the best performing model links will be activated with the end of the competition (07/02/17 00:00 UCT) to allow code verification.
 
 **Update:** The base model, the training input list and the best performing model links are now live. 
-Results with the best performing setup is:
+
+Results with the best performing setup is: 
+
 Valid Results: 0.370675 (3)
+
 Test Results: 0.361275 (2)
 
 #### For any question or problem with the code please contact me via e-mail [see profile].
