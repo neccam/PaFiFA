@@ -1,4 +1,15 @@
 # PaFiFA
+This was our submission to ChaLearn 2017 - Continuous Gesture Recognition Challenge Round 2. 
+
+For further information please refer to our paper:
+```
+@inproceedings{camgoz2017iccvw,
+   title={Particle Filter based Probabilistic Forced Alignment for Continuous Gesture Recognition},
+   author={Camgoz, Necati Cihan and Hadfield, Simon and Bowden, Richard},
+   booktitle={Proceedings of IEEE International Conference on Computer Vision Workshops (ICCVW)},
+   year={2017}
+}
+```
 
 ## Required Software 
 * FFMPEG - *[sudo apt-get install ffmpeg]*.
