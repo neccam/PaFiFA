@@ -1,1 +1,1 @@
-wget "http://cihancamgoz.com/chalearn-pafifa/best_performing_model"
+wget "http://cihancamgoz.com/files/chalearn-pafifa/best_performing_model"
