@@ -1,1 +1,1 @@
-wget "http://cihancamgoz.com/chalearn-pafifa/baseline_model"
+wget "http://cihancamgoz.com/files/chalearn-pafifa/baseline_model"
