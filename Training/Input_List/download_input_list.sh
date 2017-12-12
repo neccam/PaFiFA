@@ -1,1 +1,1 @@
-wget "http://cihancamgoz.com/chalearn-pafifa/train.input"
+wget "http://cihancamgoz.com/files/chalearn-pafifa/train.input"
